@@ -389,18 +389,26 @@ Here is a list of recommended reading for those who want to become vegan or want
 * Eating Animals - Jonathan Safran Foer
 * Animal Liberation - Peter Singer
 
-## General
+## General & Fiction
 
+* Holy Cow - David Duchovny
 * The Vegan Girl's Guide To Life - Melisser Elliott
+* The Bees - by Laline Paull
 
 ## Nutrition
 
 * Thrive: The Vegan Nutrition Guide to Optimal Performance in Sports and Life - Brendan Brazier
 * The China Study - Dr. T. Colin Campbell
 * Whole - Dr. T. Colin Campbell
+* Becoming Vegan - Brenda Davis
 * How Not To Die - Dr. Michael Greger
 * The Everything Vegan Pregnancy Book - Reed Mangels
 
+## Recipe Books
+
+* Mayim's Vegan Table - Mayim's Bialik
+* Thug Kitchen 101: Fast as F*ck - Thug Kitchen LLC
+* Forks Over Knives: The Cookbook - Darshana Thacker and Del Sroufe
 
 
 If you know of more books that should be on the list, please let us know.
