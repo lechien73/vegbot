@@ -7,7 +7,7 @@
 
 # Update this list when new trigger responses are created
 
-triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord" ])
+triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading" ])
 
 jokeNumber = 5
 
@@ -378,6 +378,37 @@ Or you can just keep talking to me! Happy chatting.
 """
 
 irc = discord = chat
+
+reading = """
+
+Here is a list of recommended reading for those who want to become vegan or want to increase their knowledge about veganism and a vegan diet:
+
+## Animal Rights
+
+* Why We Love Dogs, Eat Pigs and Wear Cows - Dr. Melanie Joy
+* Eating Animals - Jonathan Safran Foer
+* Animal Liberation - Peter Singer
+
+## General
+
+* The Vegan Girl's Guide To Life - Melisser Elliott
+
+## Nutrition
+
+* Thrive: The Vegan Nutrition Guide to Optimal Performance in Sports and Life - Brendan Brazier
+* The China Study - Dr. T. Colin Campbell
+* Whole - Dr. T. Colin Campbell
+* How Not To Die - Dr. Michael Greger
+* The Everything Vegan Pregnancy Book - Reed Mangels
+
+
+
+If you know of more books that should be on the list, please let us know.
+
+
+%s
+
+"""
 
 # ---------- Countries ---------- 
 
