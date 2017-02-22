@@ -177,9 +177,14 @@ def bot_action(comment, othersub, sendaspm):
             print(comment_header % (requesterName, parentname) + comment_reply + comment_footer)
 
     cache.append(comment.id)
+
+    # Begin query counter code
+
     f = urllib2.Request(counter_url, '', txt_headers)
     response = urllib2.urlopen(f)
     print response.read()
+
+    # End query counder code
 
 first = True
 
