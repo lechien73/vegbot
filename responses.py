@@ -50,6 +50,7 @@ Where "query" is any of the following keywords:
 * labmeat
 * lions
 * maycontain
+* nukes (will not work in r/vegan)
 * peta
 * nutrition
 * reading
@@ -448,6 +449,170 @@ Put simply, go vegan for the animals, for the planet, for other people and for y
 """
 
 beginners = newbie = beginner
+
+nukes = """
+
+[Vegan diet in physiological health promotion](http://www.ncbi.nlm.nih.gov/pubmed/10943644)
+
+[Change in quality of life and immune markers after a stay at a raw vegan institute: a pilot study](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2486444/)
+
+[The role of diet and physical activity in breast, colorectal, and prostate cancer survivorship: a review](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3251953/)
+
+[Interindividual differences in response to plant-based diets: implications for cancer risk](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677005/)
+
+[A Plant-Based Diet, Atherogenesis, and Coronary Artery Disease Prevention](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4315380/)
+
+[Effects of a long-term vegetarian diet on biomarkers of antioxidant status and cardiovascular disease risk](http://www.ncbi.nlm.nih.gov/pubmed/15474873)
+
+[Vegetarian diets and the incidence of cancer in a low-risk population](http://www.ncbi.nlm.nih.gov/pubmed/23169929)
+
+[Reduced cancer risk in vegetarians: an analysis of recent reports](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048091/)
+
+[Meat Consumption and Cancer Risk](http://www.cancerproject.org/survival/cancer_facts/meat.php)
+
+[Red meat and colon cancer](http://www.ncbi.nlm.nih.gov/pubmed/21558046)
+
+[Study finds unsafe mercury levels in 84 percent of all fish](http://www.cbsnews.com/8301-18563_162-57563739/study-finds-unsafe-mercury-levels-in-84-percent-of-all-fish/)
+
+[Restriction of meat, fish, and poultry in omnivores improves mood](http://www.nutritionj.com/content/11/1/9/abstract)
+
+[Harvard School of Public Health » milk is NOT the best source of calcium](http://www.hsph.harvard.edu/nutritionsource/calcium-and-milk/)
+
+[Eating less meat and dairy may help reduce osteoporosis risk, Cornell studies show](http://news.cornell.edu/stories/1996/11/eating-less-meat-may-help-reduce-osteoporosis-risk)
+
+[Milk-the promoter of chronic Western diseases](http://www.ncbi.nlm.nih.gov/pubmed/19232475)
+
+[Dairy product, saturated fatty acid, and calcium intake and prostate cancer](http://www.ncbi.nlm.nih.gov/pubmed/18398033)
+
+[Acne, dairy and cancer](http://www.ncbi.nlm.nih.gov/pubmed/18398033)
+
+[Hormones in milk can be dangerous](http://news.harvard.edu/gazette/2006/12.07/11-dairy.html)
+
+[Milk consumption: aggravating factor of acne and promoter of chronic diseases of Western societies](http://www.ncbi.nlm.nih.gov/pubmed/19243483)
+
+[Milk Consumption and Prostate Cancer](http://pcrm.org/health/health-topics/milk-consumption-and-prostate-cancer)
+
+[Dairy Linked to Acne Development](http://www.pcrm.org/health/medNews/dairy-linked-to-acne-development)
+
+[Understanding the Problems with Dairy Products](http://www.pcrm.org/health/medNews/dairy-linked-to-acne-development)
+
+[Nutritional Update for Physicians: Plant-Based Diets](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3662288/)
+
+[Health effects of vegan diets](http://ajcn.nutrition.org/content/89/5/1627S.full)
+
+[Vegetarians have lower levels of triglycerides, total cholesterol, and LDL cholesterol than omnivores](http://www.ncbi.nlm.nih.gov/pubmed/17364116)
+
+[Vegetarian diet may promote allergy protection](http://www.ncbi.nlm.nih.gov/pubmed/21048771)
+
+[Increased consumption of fruits and vegetables promotes cardiovascular health and longevity](http://ajcn.nutrition.org/content/early/2011/05/18/ajcn.110.009340.abstract)
+
+[Vegetarian Diets Linked to Lower Mortality](https://www.nih.gov/news-events/nih-research-matters/vegetarian-diets-linked-lower-mortality)
+
+[Vegetarians have significantly lower heart disease mortality and cancer incidence](http://www.karger.com/Article/Pdf/337301)
+
+[A high-carb low-fat (vegan) diet can reduce total and LDL cholesterol and lead to modest weight reduction](http://www.ncbi.nlm.nih.gov/pubmed/9805219)
+
+[Increased saturated fat can increase total cholesterol, in favor of LDL more than HDL](http://www.health.harvard.edu/staying-healthy/the-truth-about-fats-bad-and-good)
+
+[Vegetarians live longer than omnivores, even when controlling for other health factors](http://www.mensjournal.com/health-fitness/health/go-vegetarian-live-longer-20140717)
+
+[Increased consumption of animal products may lead to increased risk of Alzheimer’s disease](http://www.ncbi.nlm.nih.gov/pubmed/24037034)
+
+[High intake of fruits and vegetables associated with reduced risk of breast cancer](http://www.ncbi.nlm.nih.gov/pubmed/22706630)
+
+[Frequent consumption of nuts may protect against risk of cardiovascular disease](http://www.ncbi.nlm.nih.gov/pubmed/1627021)
+
+[Increasing legume intake can protect against coronary heart disease](http://www.ncbi.nlm.nih.gov/pubmed/11718588)
+
+[Increasing dietary folate can protect against stroke and heart disease](http://www.ncbi.nlm.nih.gov/pubmed/11988588)
+
+Increasing dietary fibre can protect against heart and cardiovascular disease: [1](http://www.ncbi.nlm.nih.gov/pubmed/12963562), [2](http://www.ncbi.nlm.nih.gov/pubmed/11755286)
+
+Low intake of dietary cholesterol can prevent heart disease: [1](http://www.ncbi.nlm.nih.gov/pubmed/3052353), [2](http://www.ncbi.nlm.nih.gov/pubmed/16596800)
+
+[Higher intake of fruit and vegetables lowers risk of cardiovascular disease](http://www.ncbi.nlm.nih.gov/pubmed/11010932)
+
+[Diets that are rich in plant-based foods promote longevity](http://www.ncbi.nlm.nih.gov/pubmed/12514290)
+
+[Higher consumption of fruits and vegetables can protect against cerebrovascular diseases](http://www.ncbi.nlm.nih.gov/pubmed/19646291)
+
+[Higher consumption of fruits and vegetables leads to modest reduction in development of major chronic diseases](http://www.ncbi.nlm.nih.gov/pubmed/15523086)
+
+[Higher consumption of fruits and vegetables protects against heart disease](http://www.ncbi.nlm.nih.gov/pubmed/11412050)
+
+[Vegetarians have lower risk of ischemic heart disease](http://ajcn.nutrition.org/content/97/3/597.full.pdf)
+
+[Vegans and vegetarians have lower blood pressure and prevalence of hypertension](http://www.ncbi.nlm.nih.gov/pubmed/12372158)
+
+[Beneficial association between vegetarian diet and cardiovascular risk factors](http://www.ncbi.nlm.nih.gov/pubmed/ 25343719)
+
+[African-American vegans have better cardiovascular disease risk factors than lacto-ovovegetarians](http://www.ncbi.nlm.nih.gov/pubmed/9791838)
+
+[Physicians should recommend plant-based diets to their patients](http://www.ncbi.nlm.nih.gov/pubmed/23704846)
+
+[Vegans and vegetarians have lower BMI than meat eaters](http://www.ncbi.nlm.nih.gov/pubmed/12833118)
+
+[Vegans have lower levels of IGF-1 growth hormone and higher levels of IGF-binding proteins](http://cebp.aacrjournals.org/content/11/11/1441.full.pdf)
+
+[Higher levels of IGF-1 increase risk of (prostate) cancer](http://www.ncbi.nlm.nih.gov/pubmed/12917205)
+
+Plant-based diets can reduce risk of heart disease and stroke: [1](http://www.ncbi.nlm.nih.gov/pubmed/12936948), [2](http://www.ncbi.nlm.nih.gov/pubmed/25431999)
+
+[Whole foods, plant-based diet relieves symptoms of osteoarthritis](http://www.ncbi.nlm.nih.gov/pubmed/25815212)
+
+[Plant-based diets may reduce risk of metabolic syndrome](http://www.ncbi.nlm.nih.gov/pubmed/25084991)
+
+[Vegetarian and vegan diets reduce risk of cancer](http://www.ncbi.nlm.nih.gov/pubmed/21407994)
+
+Health benefits of vegetarian diet far outweigh the potential risks: [1](http://www.ncbi.nlm.nih.gov/pubmed/15806870), [2](http://www.ncbi.nlm.nih.gov/pubmed/24964573)
+
+[Plant-based diets decrease risk of colorectal cancer](http://www.ncbi.nlm.nih.gov/pubmed/25592002)
+
+[Plant-based diets are not nutritionally deficient](http://www.ncbi.nlm.nih.gov/pubmed/24361028)
+
+[Vegetarian diets have significant benefits for weight reduction](http://www.ncbi.nlm.nih.gov/pubmed/26138004)
+
+[Vegetarian diets reduce risk of colorectal cancer](http://www.ncbi.nlm.nih.gov/pubmed/25751512)
+
+[Vegetarian diet is associated with lower blood pressure](http://www.ncbi.nlm.nih.gov/pubmed/24566947)
+
+[Vegetarian diets have more beneficial effects on health than standard American/European diet](http://www.ncbi.nlm.nih.gov/pubmed/7635375)
+
+[Beyond Meatless, the Health Effects of Vegan Diets: Findings from Adventist Cohorts](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073139/)
+
+[The Health Advantage of a Vegan Diet: Exploring the Gut Microbiota Connection](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4245565/)
+
+[Vegetarian diets: what do we know of their effects on common chronic diseases?](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677008/)
+
+[Vegans/vegetarians have lower risk of cancer](http://www.ncbi.nlm.nih.gov/pubmed/23169929)
+
+[Vegan proteins may reduce risk of cancer, obesity, cardiovascular disease](http://www.ncbi.nlm.nih.gov/pubmed/10687887)
+
+[Vegan diet leads to lower risk of cancer and cardiovascular disease](http://www.ncbi.nlm.nih.gov/pubmed/10943644)
+
+[Vegetarians have better antioxidant and heart disease profiles than healthy omnivores](http://www.ncbi.nlm.nih.gov/pubmed/15474873)
+
+[Plant-based diets can reverse cardiovascular disease](http://www.ncbi.nlm.nih.gov/pubmed/25198208)
+
+[Diabetes, hypertension, obesity more prevalent among meat-eaters than vegetarians](http://www.ncbi.nlm.nih.gov/pubmed/23283037)
+
+[Vegetarian and vegan diets have advantages in treating type 2 diabetes](http://www.ncbi.nlm.nih.gov/pubmed/20425575)
+
+[Strong protective association between Taiwanese vegetarian diet and diabetes](http://www.ncbi.nlm.nih.gov/pubmed/24523914)
+
+[Strong protective association between vegetarian diet and diabetes)](http://www.ncbi.nlm.nih.gov/pubmed/24523914)
+
+[Lower intakes of saturated fat may reduce cognitive decline in individuals with type 2 diabetes](http://www.ncbi.nlm.nih.gov/pubmed/19336640)
+
+[Diets higher in protein and animal protein increase diabetes risk](http://www.pcrm.org/health/medNews/animal-protein-linked-to-increased-diabetes-risk)
+
+[Vegetarian and vegan diets present advantages for type 2 diabetes treatment](http://www.ncbi.nlm.nih.gov/pubmed/19386029)
+
+
+
+%s
+
+"""
 
 # ---------- Countries ---------- 
 

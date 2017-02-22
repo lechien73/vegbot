@@ -40,6 +40,17 @@ Hi %s, %s
 
 """
 
+not_here = """
+
+I'm sorry, this keyword can't be used in r/vegan. If you want to send it as a PM, then use the -pm or -pmop switches.
+
+
+
+
+%s
+
+"""
+
 livemode = True
 
 subreddit = "vegan"
@@ -144,6 +155,11 @@ def bot_action(comment, othersub, sendaspm):
     elif trigger == "snacks":
         comment_reply = findRecipe("vegan snacks", my_api_key, my_cse_id, num=5)
         sidebar = ""
+    elif trigger == "nukes":
+        if othersub:
+            comment_reply = nukes
+        else:
+            comment_reply = not_here
     elif trigger == "nutrition":
         if othersub:
             comment_reply = nutrition
