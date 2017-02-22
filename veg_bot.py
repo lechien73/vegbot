@@ -185,9 +185,14 @@ def bot_action(comment, othersub, sendaspm):
             print(comment_header % (requesterName, parentname) + comment_reply + comment_footer)
 
     cache.append(comment.id)
+
+    # query counter code here
+
     f = urllib2.Request('[update query url here]', '', txt_headers)
     response = urllib2.urlopen(f)
     print response.read()
+
+    # end of query counter code
 
 first = True
 
