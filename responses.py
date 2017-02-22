@@ -7,7 +7,7 @@
 
 # Update this list when new trigger responses are created
 
-triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie" ])
+triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie", "nukes" ])
 
 jokeNumber = 5
 
@@ -452,6 +452,8 @@ beginners = newbie = beginner
 
 nukes = """
 
+Here are the big guns. Everything you wanted to know about the health effects of a vegan diet.
+
 [Vegan diet in physiological health promotion](http://www.ncbi.nlm.nih.gov/pubmed/10943644)
 
 [Change in quality of life and immune markers after a stay at a raw vegan institute: a pilot study](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2486444/)
@@ -476,7 +478,7 @@ nukes = """
 
 [Restriction of meat, fish, and poultry in omnivores improves mood](http://www.nutritionj.com/content/11/1/9/abstract)
 
-[Harvard School of Public Health » milk is NOT the best source of calcium](http://www.hsph.harvard.edu/nutritionsource/calcium-and-milk/)
+[Harvard School of Public Health >> milk is NOT the best source of calcium](http://www.hsph.harvard.edu/nutritionsource/calcium-and-milk/)
 
 [Eating less meat and dairy may help reduce osteoporosis risk, Cornell studies show](http://news.cornell.edu/stories/1996/11/eating-less-meat-may-help-reduce-osteoporosis-risk)
 
@@ -516,7 +518,7 @@ nukes = """
 
 [Vegetarians live longer than omnivores, even when controlling for other health factors](http://www.mensjournal.com/health-fitness/health/go-vegetarian-live-longer-20140717)
 
-[Increased consumption of animal products may lead to increased risk of Alzheimer’s disease](http://www.ncbi.nlm.nih.gov/pubmed/24037034)
+[Increased consumption of animal products may lead to increased risk of Alzheimer's disease](http://www.ncbi.nlm.nih.gov/pubmed/24037034)
 
 [High intake of fruits and vegetables associated with reduced risk of breast cancer](http://www.ncbi.nlm.nih.gov/pubmed/22706630)
 
