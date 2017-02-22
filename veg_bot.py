@@ -1,4 +1,4 @@
-import urllib
+import urllib2
 import praw
 import os
 import re
@@ -9,6 +9,12 @@ from responses import *
 import json
 from googleapiclient.discovery import build
 from random import randint
+
+txt_headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) veg_bot',
+    'Accept-Language': 'en-US',
+    'Accept-Encoding': 'text/html'
+}
 
 comment_header_template = """
 
@@ -179,7 +185,9 @@ def bot_action(comment, othersub, sendaspm):
             print(comment_header % (requesterName, parentname) + comment_reply + comment_footer)
 
     cache.append(comment.id)
-
+    f = urllib2.Request('[update query url here]', '', txt_headers)
+    response = urllib2.urlopen(f)
+    print response.read()
 
 first = True
 
