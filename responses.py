@@ -7,9 +7,20 @@
 
 # Update this list when new trigger responses are created
 
-triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading" ])
+triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie" ])
 
 jokeNumber = 5
+
+# Moved here because it's easier to maintain in one file, rather than altering Gary's code each time.
+
+comment_footer_template = """
+
+
+
+^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^22nd ^^February ^^2017.
+
+"""
+
 
 # ---------- Keywords ---------- 
 
@@ -23,6 +34,7 @@ You can call me from within the /r/vegan sub by replying to any comment with:
 
 Where "query" is any of the following keywords:
 
+* beginner (or beginner or newbie)
 * boyfriend (or girlfriend)
 * B12
 * canines
@@ -40,6 +52,7 @@ Where "query" is any of the following keywords:
 * maycontain
 * peta
 * nutrition
+* reading
 * protein
 * soy
 * swallow (or bj - yes, the age old question)
@@ -417,6 +430,24 @@ If you know of more books that should be on the list, please let us know.
 %s
 
 """
+
+beginner = """
+
+First of all, I want to say how great it is that you're considering veganism. Here are some helpful links to get you started.
+
+* [The Awesome and Incredible /r/vegan Beginner's Guide](https://www.reddit.com/r/vegan/wiki/beginnersguide)
+* [The Vegan Starter Kit](http://vegankit.com/why/)
+* [Why go vegan?](https://www.vegansociety.com/go-vegan/why-go-vegan) and
+* [How to go vegan](https://www.vegansociety.com/go-vegan/how-go-vegan)
+
+Put simply, go vegan for the animals, for the planet, for other people and for your own health and happiness. They're the best possible reasons.
+
+
+%s
+
+"""
+
+beginners = newbie = beginner
 
 # ---------- Countries ---------- 
 
