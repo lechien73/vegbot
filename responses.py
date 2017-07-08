@@ -9,7 +9,7 @@
 
 triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie", "nukes" ])
 
-jokeNumber = 5
+jokeNumber = 6
 
 # Moved here because it's easier to maintain in one file, rather than altering Gary's code each time.
 
@@ -22,7 +22,7 @@ comment_footer_template = """
 """
 
 
-# ---------- Keywords ---------- 
+# ---------- Keywords ----------
 
 helptext = """
 
@@ -128,7 +128,7 @@ protein = """
 
 lions = """
 
-Ah yes, the King of the jungle. Do you really want to model your behaviour on a lion or (insert random carnivorous predator here)? Really really? 
+Ah yes, the King of the jungle. Do you really want to model your behaviour on a lion or (insert random carnivorous predator here)? Really really?
 
 [I'm a lion!](http://imgur.com/xdCFSxJ)
 
@@ -288,7 +288,7 @@ labmeat = """
 
 * The Vegan Society
 
-If no animal exploitation was involved, then ethically there would be no issue with lab-grown meat from a vegan standpoint. At the moment, though, lab-grown meat still requires the use of animal cells. 
+If no animal exploitation was involved, then ethically there would be no issue with lab-grown meat from a vegan standpoint. At the moment, though, lab-grown meat still requires the use of animal cells.
 
 Additionally, there is a common perception that all vegans secretly crave meat and that not eating it is an exercise in deprivation. In fact, many vegans don't like the taste and texture of meat and wouldn't want to eat it even if it was produced without any animal exploitation. So, while some vegans may be counting the days until they can enthusiastically chow down on ethically-produced lab-grown meat, a large number still probably would not.
 
@@ -616,7 +616,7 @@ Health benefits of vegetarian diet far outweigh the potential risks: [1](http://
 
 """
 
-# ---------- Countries ---------- 
+# ---------- Countries ----------
 
 
 america = """
@@ -880,6 +880,15 @@ Because he had a bad tempeh
 
 """
 
+joke6 = """
+
+"Say non-dairy alternative!"
+- A Vegan taking a picture
+
+%s
+
+"""
+
 # ---------- Cities ----------
 
 dublin = """
@@ -953,4 +962,3 @@ Here are some vegan eating options for Jackson, Mississippi:
 %s
 
 """
-
