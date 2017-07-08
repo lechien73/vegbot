@@ -9,7 +9,7 @@
 
 triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie", "nukes" ])
 
-jokeNumber = 6
+jokeNumber = 7
 
 # Moved here because it's easier to maintain in one file, rather than altering Gary's code each time.
 
@@ -884,6 +884,15 @@ joke6 = """
 
 "Say non-dairy alternative!"
 - A Vegan taking a picture
+
+%s
+
+"""
+
+joke7 = """
+
+An atheist, a vegan, and a crossfitter walk into a bar...
+I only know because they told everyone within two minutes.
 
 %s
 
