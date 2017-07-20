@@ -7,7 +7,7 @@
 
 # Update this list when new trigger responses are created
 
-triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie", "nukes" ])
+triggerWords = set(["eggs", "canines", "ethics", "honey", "nutrition", "protein", "b12", "bj", "semen", "lions", "breakfast", "dinner", "swallow", "snacks", "help", "girlfriend", "boyfriend", "america", "usa", "england", "ireland", "scotland", "wales", "eire", "britain", "uk","france", "germany", "netherlands", "holland", "china", "canada", "spain", "australia", "bible", "labmeat", "maycontain", "joke", "soy", "sweden", "peta", "foodchain", "cheese", "dublin", "london", "charleston", "jackson", "eskimos", "inuit", "ni", "irc", "chat", "discord", "reading", "beginner", "beginners", "newbie", "nukes" ])
 
 jokeNumber = 5
 
@@ -17,7 +17,7 @@ comment_footer_template = """
 
 
 
-^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^22nd ^^February ^^2017.
+^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^19th ^^July ^^2017.
 
 """
 
@@ -56,7 +56,7 @@ Where "query" is any of the following keywords:
 * reading
 * protein
 * soy
-* swallow (or bj - yes, the age old question)
+* swallow (or semen or bj - yes, the age old question)
 
 You can also ask about any of the following countries, and I'll give you videos showing how animals are treated there:
 
@@ -266,7 +266,7 @@ So, assuming that the semen is coming from a consenting human then, yes - you ca
 
 """
 
-swallow = bj
+semen = swallow = bj
 
 bible = """
 
@@ -423,7 +423,7 @@ Here is a list of recommended reading for those who want to become vegan or want
 * Mayim's Vegan Table - Mayim's Bialik
 * Thug Kitchen 101: Fast as F*ck - Thug Kitchen LLC
 * Forks Over Knives: The Cookbook - Darshana Thacker and Del Sroufe
-
+* The Veggie-Lover's Sriracha Cookbook - Randy Clemens
 
 If you know of more books that should be on the list, please let us know.
 
@@ -451,9 +451,6 @@ Put simply, go vegan for the animals, for the planet, for other people and for y
 beginners = newbie = beginner
 
 nukes = """
-
-Here are the big guns. Everything you wanted to know about the health effects of a vegan diet.
-
 [Vegan diet in physiological health promotion](http://www.ncbi.nlm.nih.gov/pubmed/10943644)
 
 [Change in quality of life and immune markers after a stay at a raw vegan institute: a pilot study](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2486444/)
@@ -478,7 +475,7 @@ Here are the big guns. Everything you wanted to know about the health effects of
 
 [Restriction of meat, fish, and poultry in omnivores improves mood](http://www.nutritionj.com/content/11/1/9/abstract)
 
-[Harvard School of Public Health >> milk is NOT the best source of calcium](http://www.hsph.harvard.edu/nutritionsource/calcium-and-milk/)
+[Harvard School of Public Health: milk is NOT the best source of calcium](http://www.hsph.harvard.edu/nutritionsource/calcium-and-milk/)
 
 [Eating less meat and dairy may help reduce osteoporosis risk, Cornell studies show](http://news.cornell.edu/stories/1996/11/eating-less-meat-may-help-reduce-osteoporosis-risk)
 
@@ -609,11 +606,7 @@ Health benefits of vegetarian diet far outweigh the potential risks: [1](http://
 [Diets higher in protein and animal protein increase diabetes risk](http://www.pcrm.org/health/medNews/animal-protein-linked-to-increased-diabetes-risk)
 
 [Vegetarian and vegan diets present advantages for type 2 diabetes treatment](http://www.ncbi.nlm.nih.gov/pubmed/19386029)
-
-
-
 %s
-
 """
 
 # ---------- Countries ---------- 

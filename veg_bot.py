@@ -27,7 +27,7 @@ Hi, %s here is the information you requested for /u/%s:
 pmop_header = """
 
 
-Hi, %s here is the information %s you requested for you:
+Hi, %s here is the information %s requested for you:
 
 
 """
@@ -57,9 +57,12 @@ subreddit = "vegan"
 
 cache = deque(maxlen = 500)
 
-r = praw.Reddit(user_agent='The /r/vegan helper')
+r = praw.Reddit(client_id=reddit_client_id,
+                     client_secret=reddit_secret,
+                     password=reddit_password,
+                     user_agent='The /r/vegan helper',
+                     username=reddit_user_id)
 
-r.login(reddit_user_id, reddit_password)
 
 print "Logged in"
 
@@ -111,7 +114,9 @@ def bot_action(comment, othersub, sendaspm):
         comment_footer = comment_footer_template
         sidebar = "Always read the links in the sidebar --------->"
 
-    parent = r.get_info(thing_id=comment.parent_id)
+    parent = comment.parent()
+
+    print parent
 
     wheretoanswer = find_words(comment.body.lower(), answerWhere, False)
 
@@ -127,6 +132,9 @@ def bot_action(comment, othersub, sendaspm):
     trigger = find_words(comment.body.lower(), triggerWords, True)
 
     parentauthor = parent.author
+
+    if debug:
+        print parentauthor
 
     parentname = parentauthor.name
 
@@ -179,17 +187,18 @@ def bot_action(comment, othersub, sendaspm):
             if wheretoanswer != "-above":
                 comment.reply(comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
             else:
-                if isinstance(parent, praw.objects.Comment):
-                    parent.reply(comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
-                else:
-                    parent.add_comment(comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
+                if comment.is_root:
+                    parent = comment.submission
+
+                parent.reply(comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
+                
         else:
             if not send_op:
-                r.send_message(requesterName, 'Information From Gary', comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
+                r.redditor(requesterName).message('Information From Gary', comment_header % (requesterName, parentname) + comment_reply % (sidebar) + comment_footer)
             else:
-                r.send_message(parentname, 'Information From ' + requesterName, pmop_header % (parentname, requesterName) + comment_reply % (sidebar) + comment_footer)
+                r.redditor(parentname).message('Information From ' + requesterName, pmop_header % (parentname, requesterName) + comment_reply % (sidebar) + comment_footer)
 
-    if livemode == False and nopost == False:
+    if (livemode == False and nopost == False) or debug:
             print(comment_header % (requesterName, parentname) + comment_reply + comment_footer)
 
     cache.append(comment.id)
@@ -203,21 +212,21 @@ def bot_action(comment, othersub, sendaspm):
     # End query counder code
 
 first = True
-
+debug = True
 running = True
 
 while running == True:
 
-    for mention in r.get_mentions():
-        if mention.id not in cache:
-            
-            if mention.new:
-                print "It's the Bat Signal!"
-                bot_action(mention, True, False)
-                mention.mark_as_read()
-            
-    comments = r.get_comments(subreddit, limit = 25)
-    for c in comments:
+    if debug:
+        print "Initial loop"
+
+    ccount = 0
+
+    for c in r.subreddit(subreddit).stream.comments():
+
+        if debug:
+            print "Processing stream"
+
         if first is True:
             cache.append(c.id)
 
@@ -228,6 +237,11 @@ while running == True:
             writer = author.name
 
         if c.id not in cache and writer != reddit_user_id and c.banned_by == None and writer != None:
+
+            if debug:
+                print "Trying comment " + c.id
+                print ccount
+                ccount = ccount + 1
 
             if find_words(c.body, searchWord, False) != "Empty":
                 try:
@@ -246,5 +260,15 @@ while running == True:
                         bot_action(c, False, True)
                         print "Sending the info as a PM because we're banned here."
                     print "There has been an error, and I'm scared!"
+
+            for mention in r.inbox.mentions():
+                if debug:
+                    print "Mention loop"
+                if mention.id not in cache:
+            
+                    if mention.new:
+                        print "It's the Bat Signal!"
+                        bot_action(mention, True, False)
+                        mention.mark_read()
 
         first = False
