@@ -26,5 +26,7 @@ If Gary is down and you decide to run the bot yourself, then remove the query co
 |   				|   				|
 | July 20, 2017		| Version 1.2. Engine overhaul, OAuth authentication, works with PRAW 5.0.1 	|
 |   				|   				|
+| August 13, 2017	| Improved error trapping and improved statistics for charting 	|
+|   				|   				|
 
-20th July, 2017
+13th August, 2017
