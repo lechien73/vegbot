@@ -103,6 +103,8 @@ def bot_action(comment, othersub, sendaspm):
     send_pm = False
     send_op = False
 
+    called_sub = str(comment.subreddit)
+
     answerWhere = set(["-here", "-above", "-pm", "-pmop"])
 
     comment_header = comment_header_template
@@ -205,14 +207,14 @@ def bot_action(comment, othersub, sendaspm):
 
     # Begin query counter code
 
-    f = urllib2.Request(counter_url, '', txt_headers)
+    f = urllib2.Request(counter_url+ '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
     response = urllib2.urlopen(f)
     print response.read()
 
     # End query counder code
 
 first = True
-debug = True
+debug = False
 running = True
 
 while running == True:
@@ -250,10 +252,6 @@ while running == True:
 
                 except KeyboardInterrupt:
                     running = False
-                except praw.errors.APIException, e:
-                    print "[ERROR]:", e
-                    print "Sleeping for a minute. Night night!"
-                    sleep(60)
                 except Exception, e:
                     print "[ERROR]:", e
                     if e.lower() == "http error":

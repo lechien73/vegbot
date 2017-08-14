@@ -17,7 +17,7 @@ comment_footer_template = """
 
 
 
-^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^19th ^^July ^^2017.
+^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^30th ^^July ^^2017.
 
 """
 
@@ -770,6 +770,18 @@ There are animal abuses happening all over the world. Here are some sad examples
 * https://www.youtube.com/watch?v=UejJc-eQiJQ
 * https://www.youtube.com/watch?v=NBPn5EYbVW0
 * https://www.youtube.com/watch?v=QC-JCBbOuNc
+
+%s
+
+"""
+
+italy = """
+
+There are animal abuses happening all over the world. Here are some sad examples from Italy:
+
+(Warning NSFW/NSFL Content)
+
+* https://www.ciwf.org.uk/our-campaigns/investigations/eu-pig-investigations-2013/italian-pigs-investigation/
 
 %s
 
