@@ -97,11 +97,26 @@ def find_words(comment_body, words, stripspecial):
 
     return "Empty"
 
-def bot_action(comment, othersub, sendaspm):
+def bot_action(comment, othersub, sendaspm, thanks=False):
 
     nopost = False
     send_pm = False
     send_op = False
+    thankme = False
+
+    if thanks:
+        phrase = "good bot"
+        normal_body = comment.body.lower()
+        if phrase in normal_body:
+            thankme = True
+            which_reply = randint(1,3)
+            if which_reply == 1:
+                comment.reply("Thank you :]")
+            elif which_reply == 2:
+                comment.reply("Awww...you're so sweet :]")
+            elif which_reply == 3:
+                comment.reply("Thanks, I love you too :]")
+
 
     called_sub = str(comment.subreddit)
 
@@ -182,7 +197,7 @@ def bot_action(comment, othersub, sendaspm):
     else:
         comment_reply = eval(trigger)
 
-    if livemode == True and nopost == False:
+    if livemode == True and nopost == False and thanks == False:
 
         if not send_pm:
 
@@ -206,10 +221,10 @@ def bot_action(comment, othersub, sendaspm):
     cache.append(comment.id)
 
     # Begin query counter code
-
-    f = urllib2.Request(counter_url+ '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
-    response = urllib2.urlopen(f)
-    print response.read()
+    if not thankme:
+        f = urllib2.Request(counter_url+ '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
+        response = urllib2.urlopen(f)
+        print response.read()
 
     # End query counder code
 
@@ -268,5 +283,15 @@ while running == True:
                         print "It's the Bat Signal!"
                         bot_action(mention, True, False)
                         mention.mark_read()
+            
+            for reply in r.inbox.comment_replies():
+                if debug:
+                    print "Comment reply loop"
+                if reply.id not in cache:
+            
+                    if reply.new:
+                        print "It's the Bat Signal!"
+                        bot_action(reply, True, False, True)
+                        reply.mark_read()
 
         first = False

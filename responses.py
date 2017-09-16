@@ -17,7 +17,7 @@ comment_footer_template = """
 
 
 
-^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^30th ^^July ^^2017.
+^^Bloop ^^Bleep! ^^I'm ^^Gary ^^the ^^/r/vegan ^^helper ^^bot. ^^Comments ^^and ^^suggestions ^^to ^^/u/pizza_phoenix. [^^General ^^information ^^and ^^latest ^^keywords ^^here.](http://www.mattrudge.net/gary) ^^Latest ^^keyword ^^update ^^15th ^^August ^^2017.
 
 """
 
@@ -35,6 +35,7 @@ You can call me from within the /r/vegan sub by replying to any comment with:
 Where "query" is any of the following keywords:
 
 * beginner (or beginner or newbie)
+* books
 * boyfriend (or girlfriend)
 * B12
 * canines
@@ -105,9 +106,9 @@ eggs = """
 
 honey = """
 
-* The philosophy of veganism is to do no *conscious* harm to any living thing. Commercial honey production is a long way from the image of a few hives in someone's back garden. All honey production harms the bees, which have been proven to have a complex nervous system. [See this link for more.](http://healthyeating.sfgate.com/wont-vegans-eat-honey-2938.html)
-* Bees produce honey as their own food. In its lifetime, a honeybee may only produce about a teaspoon of honey. In the US, more than 400 million pounds of honey is consumed each year. [Here is more information](http://www.godfist.com/vegansidekick/guide.php#a7) and [here too.](http://yourveganfallacyis.com/en/honey-is-not-unethical)
-* As with eggs, there is no dietary need for a human to eat honey. Doing so harms the creatures that produce it.
+* The philosophy of veganism is to do no *conscious* harm to any living thing. Commercial honey production is a long way from the image of a few hives in someone's back garden. In fact, all honey collection by humans harms and often kills bees - even when this is done on a small scale with smoke! If the bees survive the honey collection process they are often weakened and traumatised. Bees have been proven to have a complex nervous system. [See this link for more.](http://healthyeating.sfgate.com/wont-vegans-eat-honey-2938.html)
+* In addition, bees produce honey as their own food. In its lifetime, a honeybee may only produce about a teaspoon of honey, but in the US alone, more than 400 million pounds of honey is consumed each year. Sugar water is often used to replace the stolen honey, which is a poor nutritional substitute. [Here is more information](http://www.godfist.com/vegansidekick/guide.php#a7) and [here too.](http://yourveganfallacyis.com/en/honey-is-not-unethical)
+* As with eggs, there is no dietary need for a human to eat honey. Doing so harms and frequently kills the creatures that produce it.
 
 
 %s
@@ -400,6 +401,7 @@ Here is a list of recommended reading for those who want to become vegan or want
 ## Animal Rights
 
 * Why We Love Dogs, Eat Pigs and Wear Cows - Dr. Melanie Joy
+* Gristle: From Factory Farms to Food Safety (Thinking Twice About the Meat We Eat) - Moby
 * Eating Animals - Jonathan Safran Foer
 * Animal Liberation - Peter Singer
 
@@ -432,6 +434,8 @@ If you know of more books that should be on the list, please let us know.
 
 """
 
+books = reading
+
 beginner = """
 
 First of all, I want to say how great it is that you're considering veganism. Here are some helpful links to get you started.
@@ -440,6 +444,20 @@ First of all, I want to say how great it is that you're considering veganism. He
 * [The Vegan Starter Kit](http://vegankit.com/why/)
 * [Why go vegan?](https://www.vegansociety.com/go-vegan/why-go-vegan) and
 * [How to go vegan](https://www.vegansociety.com/go-vegan/how-go-vegan)
+
+Here are some great documentaries:
+
+* [Diet For A New America - John Robbins](https://youtu.be/pTvrhQIKanc)
+* [Earthlings](https://youtu.be/rc2oizSsmUs)
+* [Forks Over Knives](https://www.forksoverknives.com/the-film/)
+* [Cowspiracy](http://www.cowspiracy.com)
+* [What The Health](http://www.whatthehealthfilm.com)
+
+And some good speeches too:
+
+* [Best Speech You Will Ever Hear - Gary Yourofsky](https://youtu.be/es6U00LMmC4)
+* [Why Vegan? How Being Vegan Can Save Your Health and Money - Hesh Goldstein](https://youtu.be/etMUjzMpl5w)
+* [Uprooting the Leading Causes of Death - Dr. Michael Greger[https://youtu.be/30gEiweaAVQ]
 
 Put simply, go vegan for the animals, for the planet, for other people and for your own health and happiness. They're the best possible reasons.
 
