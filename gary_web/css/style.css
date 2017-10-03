@@ -1,0 +1,12 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+g .x.axis text {
+    text-anchor: end !important; 
+    transform: rotate(-45deg);
+}
+
+h2 {
+    background-color: lightgoldenrodyellow;
+}

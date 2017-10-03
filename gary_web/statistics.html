@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/css/dc.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="css/style.css">
+   
+
+  <title>Gary Bot | Statistics</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="row">
+        <div class = "col-sm-12">
+          <a href="/gary"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><strong> Go back</strong></a>
+          <h1>
+            Gary Bot Statistics
+          </h1>
+        </div>        
+      </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+                <a href="javascript:dc.filterAll(); dc.renderAll();"><strong>Reset All</strong></a> | Displaying: <strong>
+                <span id="query-count-display"></span></strong> queries.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  <h2>Query volume</h2>
+                </div>
+                <div class="chart-stage">
+                  <div id="date-chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  <h2>Queries by subreddit</h2>
+                </div>
+                <div class="chart-stage pagination-centered">
+                      <div id="subreddit-pie-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="chart-wrapper" data-step="1" data-intro="Terminal Volume" style="font-weight: normal" data-position="right">
+                <div class="chart-title">
+                  <h2>Queries by keyword</h2>
+                </div>
+                <div class="chart-stage">
+                  <div id="keyword-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="lib/js/crossfilter.js"></script>
+<script src="lib/js/d3.js"></script>
+<script src="lib/js/dc.js"></script>
+<script src="js/graph.js"></script>
+
+</body>
+</html>

@@ -2,14 +2,14 @@
 
 $u_agent = $_SERVER['HTTP_USER_AGENT']; 
 
-if(strlen(strstr($u_agent,"veg_bot")) > 0 ){
+if(strlen(strstr($u_agent,"veg_bot")) == 0 ){
 
 	$keyword = $_GET['q'];
 	$subreddit = $_GET['s'];
 
 	/* Normalise the responses for charting */
 
-	if($keyword == "swallow" || $keyword == "bj") $keyword = "semen";
+	if($keyword == "swallow" || $keyword == "bj") $keyword = "semen"; 
 	if($keyword == "eskimos") $keyword = "inuit";
 	if($keyword == "discord" || $keyword == "irc") $keyword = "chat";
 	if($keyword == "books") $keyword = "reading";

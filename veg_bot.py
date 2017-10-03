@@ -10,6 +10,8 @@ import json
 from googleapiclient.discovery import build
 from random import randint
 
+debug = False
+
 txt_headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) veg_bot',
     'Accept-Language': 'en-US',
@@ -224,6 +226,9 @@ def bot_action(comment, othersub, sendaspm, thanks=False):
 
     # Begin query counter code
     if not thankme and trigger != "Empty":
+        if debug:
+            print counter_url + '?q=' + trigger + "&s="+ called_sub, ''
+            print txt_headers
         f = urllib2.Request(counter_url + '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
         response = urllib2.urlopen(f)
         print response.read()
@@ -231,7 +236,6 @@ def bot_action(comment, othersub, sendaspm, thanks=False):
     # End query counter code
 
 first = True
-debug = False
 running = True
 
 while running == True:
