@@ -28,5 +28,7 @@ If Gary is down and you decide to run the bot yourself, then remove the query co
 |   				|   				|
 | August 13, 2017	| Improved error trapping and improved statistics for charting 	|
 |   				|   				|
+| September 30, 2017	| Added thank you note for "Good bot" votes. Statistics improvements. 	|
+|   				|   				|
 
-13th August, 2017
+30th September, 2017

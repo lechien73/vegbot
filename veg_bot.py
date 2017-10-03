@@ -109,13 +109,15 @@ def bot_action(comment, othersub, sendaspm, thanks=False):
         normal_body = comment.body.lower()
         if phrase in normal_body:
             thankme = True
-            which_reply = randint(1,3)
+            which_reply = randint(1,4)
             if which_reply == 1:
                 comment.reply("Thank you :]")
             elif which_reply == 2:
                 comment.reply("Awww...you're so sweet :]")
             elif which_reply == 3:
                 comment.reply("Thanks, I love you too :]")
+            elif which_reply == 4:
+                comment.reply("Thanks, you're the best! :]")
 
 
     called_sub = str(comment.subreddit)
@@ -181,11 +183,11 @@ def bot_action(comment, othersub, sendaspm, thanks=False):
         comment_reply = findRecipe("vegan snacks", my_api_key, my_cse_id, num=5)
         sidebar = ""
     elif trigger == "nukes":
-        if othersub:
+        if othersub and called_sub.lower() != subreddit:
             comment_reply = nukes
         else:
             comment_reply = not_here
-    elif trigger == "nutrition":
+    elif trigger == "nutrition" and called_sub.lower() != subreddit:
         if othersub:
             comment_reply = nutrition
         else:
@@ -221,12 +223,12 @@ def bot_action(comment, othersub, sendaspm, thanks=False):
     cache.append(comment.id)
 
     # Begin query counter code
-    if not thankme:
-        f = urllib2.Request(counter_url+ '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
+    if not thankme and trigger != "Empty":
+        f = urllib2.Request(counter_url + '?q=' + trigger + "&s=" + called_sub, '', txt_headers)
         response = urllib2.urlopen(f)
         print response.read()
 
-    # End query counder code
+    # End query counter code
 
 first = True
 debug = False
@@ -258,7 +260,7 @@ while running == True:
             if debug:
                 print "Trying comment " + c.id
                 print ccount
-                ccount = ccount + 1
+                ccount += ccount
 
             if find_words(c.body, searchWord, False) != "Empty":
                 try:
