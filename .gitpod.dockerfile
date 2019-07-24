@@ -14,12 +14,12 @@ RUN apt-get -y install mongodb-org mongodb-org-server -y
 USER gitpod
 # Local environment variables
 # C9USER is temporary to allow the MySQL Gist to run
-ENV C9USER="gitpod"
+ENV C9_USER="gitpod"
 
 USER root
 # Switch back to root to allow IDE to load
 RUN echo "Creating the gitpod user in MySQL"
-RUN mysql -e "CREATE USER 'gitpod'@'%' IDENTIFIED BY '';"
+RUN mysql -e "CREATE USER '${C9_USER}'@'%' IDENTIFIED BY '';"
 RUN echo "Granting privileges"
-RUN mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'gitpod'@'%' WITH GRANT OPTION;"
+RUN mysql -e "GRANT ALL PRIVILEGES ON *.* TO '${C9_USER}'@'%' WITH GRANT OPTION;"
 RUN echo "Done"
