@@ -1,5 +1,10 @@
 FROM gitpod/workspace-mysql
 
+USER gitpod
+# Local environment variables
+# C9USER is temporary to allow the MySQL Gist to run
+ENV C9_USER="gitpod"
+
 USER root
 # Setup Heroku CLI
 RUN curl https://cli-assets.heroku.com/install.sh | sh
@@ -11,12 +16,6 @@ RUN apt-get update -y
 RUN touch /etc/init.d/mongod
 RUN apt-get -y install mongodb-org mongodb-org-server -y
 
-USER gitpod
-# Local environment variables
-# C9USER is temporary to allow the MySQL Gist to run
-ENV C9_USER="gitpod"
-
-USER root
 # Switch back to root to allow IDE to load
 RUN echo "Creating the gitpod user in MySQL"
 RUN mysql -e "CREATE USER '${C9_USER}'@'%' IDENTIFIED BY '';"
